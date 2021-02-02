@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pikachu</title>
+		<meta charset="utf-8">
+		<style>
+			/* CSS comments */
+			/* CSS is written here */
+			h1 {
+				color: blue;
+				/*background-color: yellow;*/
+				font-size: 50px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			/* Can create CSS rules for HTML tag that has a specific id using # */
+			/* CSS rules with IDs will almost always override any other CSS rules */
+			#main-image {
+				width: 200px;
+				float: left;
+				margin-right: 10px;
+			}
+			img {
+				width: 300px;
+				/* When resizing images, change either width OR height. Dont' change both because then the proportions will get messed up */
+				/* height: 200px; */	
+			}
+			span {
+				font-size: 40px;
+				color: red;
+				font-weight: bold;
+			}
+			/* Can also create CSS rules with class selectors using period (.) */
+			.pink-text {
+				color: pink;
+			}
+			p {
+				color: orange;
+			}
+			
+			/* BODY tag represents the entire browser. we will add a background image to the browser. */
+			body {
+				background-image: url("images/greenpattern.jpg");
+				/* By default, background images repeat itself */
+				/* If you want, we can prevent the image from repeating */
+				background-repeat: no-repeat;
+				margin: 0;
+				padding: 0 ;
+			}
+			/* In some browser, the HTML tag comes with margins and paddings, so just override those as well */
+			html {
+				margin: 0;
+				padding: 0;
+			}
+			#header {
+				background-color: orange;
+				text-align: center;
+			}
+			#biology {
+				background-color: yellow;
+				/* Images don't care about div widths. If image width is bigger than the div it is inside of, it will just go OUTSIDE the div */
+				width: 600px;
+				/* Even if you set a height on divs, the text and images inside it will ignore height and go OUTSIDE the div anyways. So typically there is really no need to set heights.  */
+				/*height: 400px;*/
+
+				/* Spacing - there are TWO ways to create spaces in a div */
+				/* 1. PADDING - creates spacing INSIDE an HTML tag. */
+				/* */
+				padding-left: 20px;
+				padding-bottom: 20px;
+				padding-right: 20px;
+				padding-top: 20px;
+
+				/* 2. MARGIN - creates spacing OUTSIDE an HTML tag */
+				margin-left: 80px;
+			}
+			#facts {
+				background-color: skyblue;
+				width: 400px;
+
+				/* Horizontally center this entire div to the browser */
+				margin-left: auto;
+				margin-right: auto;
+
+				/* BORDERS */
+				border-color: black;
+				border-width: 5px;
+				border-style: dotted;
+
+				/* Shorthand way to write border */
+				border: black 5px dotted;
+
+			}
+			#top3 {
+				background-color: lightgreen;
+			}
+			#resources {
+				background-color: lavender;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1 class="pink-text">All About Pikachu</h1>
+		</div> <!-- end of #header -->
+
+		<div id="biology">
+
+
+			<!-- <img id="main-image2" src="images/pikachu.jpg" alt="Weird pikachu"/> -->
+
+			<img id="main-image" src="https://img.pokemondb.net/artwork/large/pikachu-lets-go.jpg" alt="Pikachu wearing a bowtie" />
+
+			<h2 class="pink-text">Biology</h2>
+
+			<p class="pink-text" ><a href="https://google.com"><span>P</span>ikachu</a> are a species of Pokémon, fictional creatures that appear in an assortment of video games, animated television shows and movies, trading card games, and comic books licensed by The Pokémon Company, a Japanese corporation. They are yellow rodent-like creatures (large-eared pika) with powerful electrical abilities. In most vocalized appearances, including the anime and certain video games, they are primarily voiced by Ikue Ōtani. A Pikachu also appears as part of the main cast in the live-action animated film Pokémon Detective Pikachu, played in CGI and voiced by Ryan Reynolds.</p>
+
+			
+
+			<p>The Pikachu design was conceived by Atsuko Nishida and finalized by Ken Sugimori.[2] Pikachu first appeared in Pokémon Red and Green in Japan, and later in the first internationally released Pokémon video games, Pokémon Red and Blue, for the original Game Boy.</p>
+		</div> <!-- end of #biology -->
+
+		<div id="facts">
+			<h2>Facts</h2>
+			<ul>
+				<li>electric type pokemon</li>
+				<li>is yellow</li>
+				<li>has an lightning bolt shaped tail</li>
+			</ul>
+		</div> <!-- end of #facts -->
+
+		<div id="top3">
+			<h2>Top 3 things Pikachu likes</h2>
+			<ol>
+				<li>ketchup</li>
+				<li>apples</li>
+				<li>Ash</li>
+			</ol>
+		</div> <!-- end of #top3 -->
+
+		<div id="resources">
+			<h2>Resources</h2>
+			<a href="https://www.google.com" target="_blank">Click Me!</a>
+
+			<!-- Quick way to create line breaks -->
+			<br/>
+			<br/>
+			<br/>
+
+			<a href="mailto:nayeonki@usc.edu">Email us</a>
+		</div> <!-- end of #resources -->
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
