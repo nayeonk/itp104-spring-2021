@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article</title>
+
+	<style>
+		h1 {
+			margin: 0;
+		}
+		h2 {
+			margin: 0;
+		}
+		p {
+			margin: 0;
+		}
+		body {
+			margin: 0;
+		}
+
+		#header {
+			background-color: red;
+			font-size: 48px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		#title {
+			background-color: lightgreen;
+		}
+		#content-container {
+			background-color: orange;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#article {
+			background-color: yellow;
+			width: 690px;
+			float: left;
+			/* Any time you add padding, te width of this div GROWS*/
+			padding-left: 10px;
+		}
+		#main-image {
+			/*width: 700px;*/
+			/* image is now going to fit the #article div, 100% */
+			width: 100%;
+		}
+		#sidebar {
+			background-color: pink;
+			width: 200px;
+			float: left;
+		}
+		/* A CSS rule to clear floats. This CSS class can be applied to any HTML tags */
+		.clearfloat {
+			clear: both;
+		}
+		#footer {
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		Los Angeles Times
+	</div> <!-- end of #header -->
+
+	<div id="title">
+		<h1>How to find the oddest birds in L.A.</h1>
+	</div> <!-- end of #title -->
+
+
+	<div id="content-container">
+
+		<div id="article">
+			<img id="main-image" src="images/article1.jpeg" alt="Three birds on top of hollywood sign" />
+			<div id="caption">
+				<p>Want to be a bird-spotter? The Rare Bird Ale-rt points you to unusual species that may be visiting L.A.(Photo illustration by Micah Fluellen / Los Angeles Times; Getty Images)</p>
+			</div>
+
+			<p>By MARY FORGIONEASSISTANT TRAVEL EDITOR </p>
+
+			<p>But for the pandemic, I would be flying to New York City to see a snowy owl standing in a Central Park meadow. It’s the first time the Arctic tundra dweller has been seen in the park in130 years. “Wow! A magnificent snowy owl is in NYC! 🦉,” @Centralparknyc posted on IG.</p>
+
+			<p>The rare sighting took me back to 2013, when I persuaded my husband to ditch his birthday dinner in favor of careening over to Marina del Rey to see blue-footed boobies that had appeared offshore. We got there just before sunset. Avid birders had set up scopes and invited us to take a look. It was beyond thrilling to see these visitors from Ecuador’s Galápagos Islands.</p>
+
+			<p>How did I know the boobies had arrived? I regularly scroll the Rare Bird Alert for L.A. County, an app that tracks out-of-place birds the way Hollywood tracks red-carpet arrivals. Each entry gives details on where to find the bird and how many times it has been seen. Last week, a scissor-tailed flycatcher, native to the southern Great Plains and south Texas, appeared at the Westside’s Ballona Wetlands — more than once. A tropical kingbird, usually found between southern Arizona and Central America, turned up at Torrance’s Entradero Park. Download the eBird app here.</p>
+		</div> <!-- end of #article -->
+
+		<div id="sidebar">
+			<h2>Related Articles</h2>
+			<ul>
+				<li>Related article #1 here</li>
+				<li>Related article #2 here</li>
+				<li>Related article #3 here</li>
+			</ul>
+		</div> <!-- end of #sidebar -->
+
+		<!-- Clear the float here. In the first row, we only want article and sidebar!! -->
+		<div class="clearfloat"></div>
+
+	</div> <!-- end of #content-container -->
+
+	
+
+	<div id="footer">
+		Created by Nayeon Kim at ITP 104.
+	</div> <!-- end of #footer -->
+
+</body>
+</html>
+
+
+
+
+
