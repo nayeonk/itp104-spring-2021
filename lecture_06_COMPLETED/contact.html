@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us | ITP Webdev</title>
+	<link href="main.css" rel="stylesheet">
+
+	<style>
+		/* Contact Form */
+		.form-row {
+			margin: 10px 0px;
+		}
+		.main-label {
+			display: block;
+			width: 200px;
+			float: left;
+		}
+		button {
+			padding: 10px 20px;
+		}
+		#submit-btn {
+			background-color: #900;
+			color: #FFF;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="header">
+		<h1>ITP Web Development</h1>
+	</div> <!-- #header -->
+
+	<div id="navbar">
+		<div id="nav">
+			<a href="lecture.html">Home</a>
+			<a href="lecture.html#gallery-section">Gallery</a>
+			<a href="lecture.html#course-section">Course Plan</a>
+			<a href="contact.html" id="active-nav">Contact</a>
+
+			<div class="clearfloat"></div>
+		</div> <!-- #nav -->
+	</div> <!-- #navbar -->
+
+	<div id="main">
+		<h2 id="contact-section">Contact</h2>
+
+		<p>For questions, email <a href="mailto:itp@usc.edu">itp@usc.edu</a>.</p>
+
+		<form action="confirmation.html">
+
+			<div class="form-row">
+				<label class="main-label" for="name-id">Name:</label>
+				<input id="name-id" type="text" placeholder="Tommy Trojan">
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="email-id">Email:</label>
+				<input id="email-id" type="email" placeholder="ttrojan@usc.edu">
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<label class="main-label">Are you a current student?</label>
+
+				<label>
+					<input type="radio" name="current-student">
+					Yes
+				</label>
+
+				<label>
+					<input type="radio" name="current-student">
+					No
+				</label>
+
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<label class="main-label">Subscribe:</label>
+
+				<label>
+					<input type="checkbox">
+					Newsletters
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Events
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Marketing
+				</label>
+
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="subject-id">Subject:</label>
+
+				<select id="subject-id">
+					<option>Declaring a Minor</option>
+					<option>Question</option>
+					<option>Other</option>
+				</select>
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="msg-id">Message:</label>
+				<textarea id="msg-id" placeholder="Hello..."></textarea>
+			</div> <!-- .form-row -->
+
+			<div class="form-row">
+				<button id="submit-btn" type="submit">Send</button>
+				<button type="reset">Clear</button>
+			</div> <!-- .form-row -->
+
+		</form>
+	</div> <!-- #main -->
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+</body>
+</html>
