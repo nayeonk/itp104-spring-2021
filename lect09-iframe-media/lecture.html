@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>iframes, Media Tags</title>
+	<style>
+		.clearfloat {
+			clear: both;
+		}
+		body {
+			padding: 0px 15px;
+		}
+		h2 {
+			margin-top: 50px;
+		}
+		.section {
+			max-width: 80%;
+			margin: auto;
+		}
+		video, audio {
+			max-width: 100%;
+		}
+		iframe {
+			width: 100%;
+			height: 800px;
+		}
+		#video {
+			width: 300px;
+			border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="section">
+
+		<h2>iFrames</h2>
+
+		<ul>
+			<li>
+				<!-- When clicking on these links, the link will open up in the iframe (target attribute) -->
+				<a target="my-frame" href="iframe_example.html">iframe example page</a>
+			</li>
+			<li>
+				<a target="my-frame" href="https://www.usc.edu/">University of Southern California</a>
+			</li>
+			<li>
+				<a target="my-frame" href="media/lecture_09.pdf">Lecture Slides</a>
+			</li>
+		</ul>
+
+		<!-- You can embed another website into your own website using an iframe tag -->
+		<!-- <iframe src="https://www.usc.edu"></iframe> -->
+
+		<!-- Some websites dont allow you to iframe their website. For example, google -->
+		<!-- <iframe src="http://www.google.com"></iframe> -->
+
+		<!-- You can also iframe PDFs. It's useful for resumes. -->
+		<!-- <iframe src="media/lecture_09.pdf"></iframe> -->
+
+		<!-- You can also iframe your own HTML pages from your computer. -->
+		<iframe src="iframe_example.html" name="my-frame"></iframe>
+
+	</div> <!-- .section -->
+
+	<div class="section">
+
+		<h2>Media Embed</h2>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/1HygThMLzGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My new version of Love Story (Taylor’s Version) is out now 💛💛 Get it instantly when you pre-order Fearless (Taylor’s Version) <a href="https://t.co/NqBDS6cGFl">https://t.co/NqBDS6cGFl</a> <a href="https://t.co/KdHdZXnWbP">pic.twitter.com/KdHdZXnWbP</a></p>&mdash; Taylor Swift (@taylorswift13) <a href="https://twitter.com/taylorswift13/status/1360093736932429828?ref_src=twsrc%5Etfw">February 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13226.75188220996!2d-118.28774264999998!3d34.0262195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c740a9506971%3A0x19958394484c8435!2sUSC!5e0!3m2!1sen!2sus!4v1616449868863!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+		<a class="twitter-timeline" href="https://twitter.com/taylorswift13?ref_src=twsrc%5Etfw">Tweets by taylorswift13</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	</div> <!-- .section -->
+	
+	<div class="section">
+
+		<h2>HTML 5 Video</h2>
+
+		<!-- Can add a video to your website using the <video> tag -->
+		<!-- Chrome will not autoplay a video unless it is also muted -->
+		<video id="video" autoplay muted loop controls>
+			<source src="media/dog.mp4" />
+			<source src="media/dog.webm">
+			<source src="media/dog.ogv">
+		</video>
+
+	</div> <!-- .section -->
+
+	<div class="section">
+
+		<h2>HTML 5 Audio</h2>
+
+		<audio controls loop autoplay>
+			<source src="media/besound_sunny.mp3">
+		</audio>
+
+	</div> <!-- .section -->
+
+</body>
+</html>
+
