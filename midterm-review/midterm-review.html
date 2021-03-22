@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		span {
+			color: blue;
+		}
+		p {
+			text-align: center;
+		}
+		#box {
+			background-color: yellow;
+			text-align: center;
+
+			width: 300px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 10px solid black;
+			/* Padding and borders add to the width of this #box div. Now the width is 322px (1px + 10px + 300px + 10px +1px*/
+
+			/* Margins create space OUTSIDE the div, so it does not affect the width of this div */
+			/*margin-left: 20px;*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.clearfloat {
+			clear: both;
+		}
+		#parent {
+			width: 300px;
+			height: 400px;
+			background-color: pink;
+
+			position: relative;
+		}
+		#child {
+			/* This div will position itself within the #parent */
+			position: absolute;
+
+			top: 0px;
+			right: 0px;
+
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="parent">
+		<div id="child">
+			Hello!!
+		</div>
+	</div>
+
+
+	<div id="box" class="red">
+		Hello I'm a div
+	</div>
+	<div id="box2" class="red">
+		Hello I'm a div
+	</div>
+	<div class="clearfloat"></div>
+
+	<h1 class="red">All About Pikachu</h1>
+	<h2 class="red">Biology</h2>
+	<h3 class="red">Biology</h3>
+	<h4 id="box2"> Biology</h4>
+	<h5>Biology</h5>
+	<h6>Biology</h6>
+
+	<br>
+	<br>
+	<br>
+
+	<hr>
+
+	<p><strong>Water</strong> <em>Bottle</em></p>
+	<strong></strong>
+	<img alt="" src="image/image.jpg">
+	<a href="https://www.usc.edu" target="_blank">Click me</a>
+	<span>P</span>ikachu
+	<!-- Bulleted list -->
+	<ul id="">
+		<li>Apple</li>
+		<li>Peach</li>
+	</ul>
+	<!-- Numbered list -->
+	<ol>
+		<li>Apple</li>
+		<li>Peach</li>
+	</ol>
+
+	<!-- Label tags -->
+	<label for="name-input">Name:</label>
+	<input type="text" id="name-input" />
+
+	<!-- Second way to write label tags -->
+	<label>
+		Name:
+		<input type="text" />
+	</label>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
